@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'cartoonist';
+  src: url('fonts/sf-cartoonist-hand.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'cartoonist';
+  letter-spacing: 2px;
+  min-width: 455px;
+}
+
+/* ################################ CONTENT ################################ */
+.main {
+  background-color: #DC9856;
+  margin: 0 auto;
+  padding: 15px 30px;
+  max-width: 750px;
+  border: solid 5px #000;
+  border-radius: 50px;
+}
+.main__container {
+  background-color: #fffadf;
+  min-height: 750px;
+  max-width: 680px;
+  border: solid 5px #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+.main__headline {
+  margin: 0 auto;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--bs-border-radius);
+}
+.input {
+  border: 0;
+  border-bottom: solid 3px #000;
+  border-radius: 0;
+  font-size: 24px;
+  letter-spacing: 2px;
+  background: transparent;
+}
+.input:focus {
+  background: transparent;
+}
+.insert-button {
+  border: 0;
+  border-bottom: solid 3px #000;
+  border-radius: 0;
+  padding: 6px 12px;
+  background-color: transparent;
+}
+.list__item {
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 1rem 0;
+  width: 100%;
+  border-bottom: solid 1px #000;
+}
+.list__item:last-child {
+  border-bottom: 0;
+}
+.item__text {
+  width: 70%;
+  display: inline-block;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+.item__buttons {
+  width: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.item__button {
+  border: solid 1px #000;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+
+/* ################################# CLIP ################################## */
+.clip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  min-width: 455px;
+}
+.clip__top {
+  width: 220px;
+  height: 30px;
+  background-color: #878787;
+  border: solid 5px #000;
+  border-bottom: 0;
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
+}
+.clip__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+}
+.clip__bottom--right {
+  width: 50px;
+  background-color: #878787;
+  border: solid 5px #000;
+  border-right: 0;
+  border-radius: 50px 0px 0px 50px;
+  position: relative;
+}
+.clip__bottom--center {
+  width: 210px;
+  background-color: #878787;
+  border-bottom: solid 5px #000;
+  position: relative;
+}
+.clip__bottom--left {
+  width: 50px;
+  background-color: #878787;
+  border: solid 5px #000;
+  border-left: 0;
+  border-radius: 0px 50px 50px 0px;
+  position: relative;
+}
+
+
+/* ############################## CLIP SHADOW ############################## */
+.clip__top--shadow {
+  background-color: #B2B2B2;
+  width: 80%;
+  height: 15px;
+  position: absolute;
+  top: 7.5px;
+  left: 10%;
+  border-radius: 5px;
+}
+.clip__bottom--right-shadow {
+  background-color: #B2B2B2;
+  height: 8px;
+  width: 60%;
+  border-radius: 5px 0px 0px 5px;
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+}
+.clip__bottom--center-right-shadow {
+  background-color: #B2B2B2;
+  height: 8px;
+  width: 80%;
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  border-radius: 0px 5px 5px 0px;
+}
+.clip__bottom--center-left-shadow {
+  background-color: #B2B2B2;
+  height: 8px;
+  width: 10%;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  border-radius: 5px 0px 0px 5px;
+}
+.clip__bottom--left-shadow {
+  background-color: #B2B2B2;
+  height: 8px;
+  width: 60%;
+  border-radius: 0px 5px 5px 0px;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+}

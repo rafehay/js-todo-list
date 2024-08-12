@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="clip">
+    <div class="clip__top">
+      <div class="clip__top--shadow"></div>
+    </div>
+    <div class="clip__bottom">
+      <div class="clip__bottom--right">
+        <div class="clip__bottom--right-shadow"></div>
+      </div>
+      <div class="clip__bottom--center">
+        <div class="clip__bottom--center-right-shadow"></div>
+        <div class="clip__bottom--center-left-shadow"></div>
+      </div>
+      <div class="clip__bottom--left">
+        <div class="clip__bottom--left-shadow"></div>
+      </div>
+    </div>
+  </div>
+  <main class="main mt-5">
+    <div class="main__container container text-center">
+      <h2 class="main__headline display-2">TO DO LIST</h2>
+
+      <div class="container m-auto">
+        <div class="input-group">
+          <input type="text" id="input" class="form-control input" placeholder="Write something to do" aria-label="Wirte something to do" aria-describedby="insert-button">
+          <button class="insert-button" type="button" id="insert-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="list-group" id="list"></ul>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
